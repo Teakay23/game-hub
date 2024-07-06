@@ -28,17 +28,5 @@ const useGames = (gameQuery: GameQuery) =>
         .then((res) => res.data.results),
     staleTime: 1 * 60 * 1000, // 1 minute
   });
-// useData<Game>(
-//   "/games",
-//   {
-//     params: {
-//       genres: gameQuery.genre?.id,
-//       platforms: gameQuery.platform?.id,
-//       ordering: gameQuery.sortOrder,
-//       search: gameQuery.searchText,
-//     },
-//   },
-//   [gameQuery]
-// );
 
 export default useGames;
